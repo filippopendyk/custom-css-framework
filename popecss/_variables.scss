@@ -6,19 +6,19 @@ $info: #f6c31c;
 
 // color palette
 $colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-    "error": $error,
-    "info": $info,
-    "blue": #1919e6,
-    "red": #e61919,
-    "yellow": #e6e619,
-    "green": #19e635,
-    "orange": #ffa600,
-    "purple": #9900ff,
-    "gray": #808080,
-    "black": black,
-    "white": white,
+        "primary": $primary,
+        "secondary": $secondary,
+        "error": $error,
+        "info": $info,
+        "blue": #1919e6,
+        "red": #e61919,
+        "yellow": #e6e619,
+        "green": #19e635,
+        "orange": #ffa600,
+        "purple": #9900ff,
+        "gray": #808080,
+        "black": black,
+        "white": white,
 );
 
 .test-btn {
@@ -32,7 +32,11 @@ $colors: (
 
 // Spacing
 $base-padding: 0.75rem;
+$medium-padding: $base-padding * 1.5;
+$large-padding: $base-padding * 2;
 $base-margin: 0.75rem;
+$medium-margin: $base-margin * 1.5;
+$large-margin: $base-margin * 2;
 
 // borders
 $base-border-thickness: 1px;
@@ -47,3 +51,94 @@ $font-size-sm: $base-font-size * 0.75;
 $font-size-lg: $base-font-size * 1.5;
 $font-size-xl: $base-font-size * 2;
 $font-size-xxl: $base-font-size * 3;
+
+// font weights
+$extrasmall-font-weight: lighter;
+$base-font-weight: normal;
+$medium-font-weight: bolder;
+$large-font-weight: bold;
+
+// Color Utility Classes
+.color-primary {
+    color: map-get($colors, "primary");
+}
+
+.color-secondary {
+    color: map-get($colors, "secondary");
+}
+
+.color-error {
+    color: map-get($colors, "error");
+}
+
+.color-info {
+    color: map-get($colors, "info");
+}
+
+// Font Weight Utility Classes
+.font-light {
+    font-weight: $extrasmall-font-weight;
+}
+
+.font-regular {
+    font-weight: $base-font-weight;
+}
+
+.font-medium {
+    font-weight: $medium-font-weight;
+}
+
+.font-bold {
+    font-weight: $large-font-weight;
+}
+
+// Font Size Utility Classes
+.font-small {
+    font-size: $font-size-sm;
+}
+
+.font-large {
+    font-size: $font-size-lg;
+}
+
+.font-extra-large {
+    font-size: $font-size-xl;
+}
+
+.font-xxl {
+    font-size: $font-size-xxl;
+}
+
+// Margin Utility Classes
+.margin-none {
+    margin: 0;
+}
+
+.margin-small {
+    margin: $base-margin;
+}
+
+.margin-medium {
+    margin: $medium-margin;
+}
+
+.margin-large {
+    margin: $large-margin;
+}
+
+// Padding Utility Classes
+.padding-none {
+    padding: 0;
+}
+
+.padding-small {
+    padding: $base-padding;
+}
+
+.padding-medium {
+    padding: $medium-padding;
+}
+
+.padding-large {
+    padding: $large-padding;
+}

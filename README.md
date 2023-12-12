@@ -1,1 +1,3 @@
-# custom-css-framework
+# Popecss
+
+This CSS framework is a versatile and customizable styling toolkit designed for web development. It features a thoughtfully curated color palette, with easily accessible variables such as primary, secondary, error, and info, allowing seamless integration of consistent and appealing colors across your web application. The framework provides a set of utility classes for font sizes, font weights, margins, and padding, enabling developers to achieve consistent spacing and text styling with minimal effort. With adjustable variables for spacing, borders, box shadows, and font characteristics, this framework ensures flexibility and ease of use in creating a visually appealing and cohesive user interface. The framework's modular structure and utility classes make it a powerful tool for efficient and consistent styling throughout your web project.
